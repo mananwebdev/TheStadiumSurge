@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10182b"><title>SurgeShield — Operations Overview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css"><script src="js/app.js" defer></script>
+</head>
+<body data-page="overview">
+<div class="layout">
+<aside class="sidebar"><a class="brand" href="index.html"><span class="brand-icon">S</span><span><b>SurgeShield</b><small>METRO OPERATIONS</small></span></a>
+<div class="nav-label">WORKSPACE</div><nav class="nav">
+<a class="nav-link active" href="index.html"><span>▦</span> Overview</a><a class="nav-link" href="planner.html"><span>⌁</span> Event planner</a><a class="nav-link" href="action-plan.html"><span>☷</span> Crowd action plan</a><a class="nav-link" href="announcements.html"><span>◖</span> Announcements</a>
+</nav><div class="sidebar-bottom"><div class="offline-card"><span class="green-dot"></span><div><b>Local demo mode</b><small>No backend required</small></div></div><div class="profile"><div class="avatar">MC</div><div><b>Metro Control</b><small>Operations team</small></div></div></div></aside>
+<main class="main">
+<header class="topbar"><div class="breadcrumbs">Metro Control <span>/</span> <b>Overview</b></div><div class="top-right"><span class="date-label" id="todayLabel"></span><span class="user-avatar">MC</span></div></header>
+<section class="hero">
+<div class="hero-content"><div class="eyebrow"><span class="pulse"></span> CROWD INTELLIGENCE · PROTOTYPE</div><h1>Plan the surge.<br><em>Protect the journey.</em></h1><p>Turn event details into a clear, minute-by-minute crowd response plan — before the gates open.</p><a class="button button-orange" href="planner.html">Build an event plan <span>↗</span></a></div>
+<div class="hero-art"><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div><div class="route-line"><i></i><i></i><i></i><i></i><i></i></div><div class="floating-card crowd-card"><small>EXPECTED ATTENDANCE</small><strong id="heroCrowd">28,000</strong><span>people · sample event</span></div><div class="floating-card surge-card"><small>PEAK SURGE WINDOW</small><strong>+15 <i>min</i></strong><span>after event end</span></div><div class="art-foot"><span class="green-dot"></span> Crowd-flow simulation <b>READY</b></div></div>
+</section>
+<div class="page-intro"><div><p class="eyebrow light">AT A GLANCE</p><h2>Operations overview</h2><p>Live-looking demo indicators powered by your saved sample plan.</p></div><a class="text-link" href="action-plan.html">View action plan ↗</a></div>
+<section class="metrics">
+<article class="metric"><div class="metric-label">Planned event crowd <span class="metric-symbol orange">↗</span></div><strong id="metricCrowd">28,000</strong><small>Expected attendance</small></article>
+<article class="metric"><div class="metric-label">Estimated metro demand <span class="metric-symbol blue">⌖</span></div><strong id="metricDemand">14,000</strong><small>Based on selected metro share</small></article>
+<article class="metric"><div class="metric-label">Action checkpoints <span class="metric-symbol green">✓</span></div><strong id="metricActions">6</strong><small>In the generated playbook</small></article>
+<article class="metric"><div class="metric-label">Risk assessment <span class="metric-symbol red">⌁</span></div><strong id="metricRisk" class="risk-high">HIGH</strong><small>Calculated from demo rules</small></article>
+</section>
+<section class="grid-two">
+<article class="panel"><div class="panel-head"><div><p class="eyebrow light">EVENT SNAPSHOT</p><h3 id="eventSummaryTitle">Narendra Modi Stadium · Match Day</h3></div><span class="pill pill-green">SAMPLE DATA</span></div><div class="detail-list"><div><span>Nearest station</span><b id="summaryStation">Motera Stadium</b></div><div><span>Event ends</span><b id="summaryEnd">22:00</b></div><div><span>Suggested planning headway</span><b id="summaryHeadway">4 minutes</b></div><div><span>Weather condition</span><b id="summaryWeather">Normal conditions</b></div></div><a class="panel-link" href="planner.html">Edit event details <span>↗</span></a></article>
+<article class="panel"><div class="panel-head"><div><p class="eyebrow light">SURGE FORECAST</p><h3>Passenger flow by time</h3></div><span class="pill pill-orange">ILLUSTRATIVE</span></div><div class="mini-chart" id="miniChart"><div style="height:28%"><i></i><span>−60m</span></div><div style="height:43%"><i></i><span>−30m</span></div><div style="height:65%"><i></i><span>End</span></div><div class="peak" style="height:96%"><i></i><span>+15m</span></div><div style="height:74%"><i></i><span>+30m</span></div><div style="height:47%"><i></i><span>+45m</span></div><div style="height:29%"><i></i><span>+60m</span></div></div><p class="chart-note">The largest outbound wave is modelled shortly after the event ends.</p></article>
+</section>
+<section class="callout"><div class="callout-icon">✦</div><div><b>Designed for a two-hour hackathon demo</b><p>Configure a hypothetical event, generate an explainable response plan, and show the checklist and multilingual announcements. No MERN stack, server or database needed.</p></div><a href="planner.html" class="callout-link">Start planning ↗</a></section>
+<footer class="footer"><span>SurgeShield · Metro Hacks PS-05</span><span>HTML · CSS · JavaScript <i></i> Static local prototype</span></footer>
+</main></div>
+</body></html>
